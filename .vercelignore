@@ -1,0 +1,9 @@
+node_modules
+.next
+.env*.local
+.git
+*.md
+CUSTOMIZATION.md
+DEPLOYMENT.md
+FEATURES.md
+QUICK_START.md

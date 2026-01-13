@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-inter: 'Inter', system-ui, sans-serif;
+    --font-space-grotesk: 'Space Grotesk', system-ui, sans-serif;
+    --font-jetbrains-mono: 'JetBrains Mono', monospace;
+  }
+  
+  body {
+    @apply bg-background text-text-primary antialiased;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10 rounded-xl;
+  }
+
+  .glass-card-hover {
+    @apply glass-card transition-all duration-300 hover:bg-white/10 hover:border-neon-cyan/50 hover:shadow-lg hover:shadow-neon-cyan/20;
+  }
+
+  .neon-border {
+    @apply border-2 border-neon-cyan/50 shadow-lg shadow-neon-cyan/30;
+  }
+
+  .neon-text {
+    @apply text-neon-cyan;
+    text-shadow: 0 0 10px rgba(0, 229, 255, 0.7);
+  }
+
+  .section-title {
+    @apply text-xs uppercase tracking-[0.3em] text-text-muted font-mono mb-8;
+  }
+
+  .grid-background {
+    background-image: 
+      linear-gradient(rgba(0, 229, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 229, 255, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+
+  .gradient-blur {
+    position: absolute;
+    filter: blur(100px);
+    opacity: 0.3;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0E14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00E5FF;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3B82F6;
+}
+
+/* Selection */
+::selection {
+  background: rgba(0, 229, 255, 0.3);
+  color: #E5E7EB;
+}
+
+/* Light mode overrides */
+.light {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+  color: rgb(31 41 55);
+}
+
+.light .glass-card {
+  @apply bg-black/5 border-black/10;
+}
+
+.light .glass-card-hover {
+  @apply hover:bg-black/10 hover:border-neon-blue/50 hover:shadow-neon-blue/20;
+}
+
+.light ::-webkit-scrollbar-track {
+  background: #f3f4f6;
+}
+
+.light ::-webkit-scrollbar-thumb {
+  background: #3B82F6;
+}

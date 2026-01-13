@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 const socialLinks = [
   { icon: Github, href: 'https://github.com/Revelts', label: 'GitHub' },
   { icon: Linkedin, href: 'https://www.linkedin.com/in/leynardo-yosef-6a3a5226a/', label: 'LinkedIn' },
-  { icon: Mail, href: 'mailto:leynardo@example.com', label: 'Email' },
+  { icon: Mail, href: 'mailto:leynardoyosef@gmail.com', label: 'Email' },
 ]
 
 export function Footer() {

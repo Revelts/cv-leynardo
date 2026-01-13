@@ -9,8 +9,8 @@ const contactMethods = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'leynardo@example.com',
-    href: 'mailto:leynardo@example.com',
+    value: 'leynardoyosef@gmail.com',
+    href: 'mailto:leynardoyosef@gmail.com',
     color: 'text-neon-cyan',
     bgColor: 'bg-neon-cyan/10',
     borderColor: 'border-neon-cyan/30',
@@ -56,7 +56,7 @@ export function ContactSection() {
     // In a real application, this would send to an API
     const subject = `Portfolio Contact from ${formData.name}`
     const body = `Name: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0A%0D%0AMessage:%0D%0A${formData.message}`
-    window.open(`mailto:leynardo@example.com?subject=${subject}&body=${body}`)
+    window.open(`mailto:leynardoyosef@gmail.com?subject=${subject}&body=${body}`)
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -162,7 +162,7 @@ export function ContactSection() {
                   onChange={handleChange}
                   required
                   className="w-full pl-12 pr-4 py-3 rounded-lg bg-white/5 border border-white/10 text-text-primary focus:border-neon-cyan/50 focus:outline-none transition-colors"
-                  placeholder="your.email@example.com"
+                  placeholder="leynardoyosef@gmail.com"
                 />
               </div>
             </div>

@@ -267,8 +267,8 @@ Already configured with:
 Create `.env.local` (not committed to git):
 ```env
 NEXT_PUBLIC_SITE_URL=https://leynardo.vercel.app
-NEXT_PUBLIC_EMAIL=your.email@example.com
-NEXT_PUBLIC_WHATSAPP=6281234567890
+NEXT_PUBLIC_EMAIL=leynardoyosef@gmail.com
+NEXT_PUBLIC_WHATSAPP=6281213331315
 ```
 
 ## 📈 Performance Optimization

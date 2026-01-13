@@ -80,7 +80,7 @@ export function ContactSection() {
             CONNECT WITH ME
           </h3>
           <p className="text-text-muted mb-8 leading-relaxed">
-            Feel free to reach out through any of these channels. I'm always open to 
+            Feel free to reach out through any of these channels. I&apos;m always open to 
             discussing new opportunities, collaborations, or just having a chat about technology.
           </p>
 
